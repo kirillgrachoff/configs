@@ -1,6 +1,8 @@
 set nocompatible
 set encoding=utf-8
 
+" set updatetime=300
+
 set tabstop=4
 set smartindent
 set shiftwidth=4
