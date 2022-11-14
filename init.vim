@@ -34,6 +34,7 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'apzelos/blamer.nvim'
+" Plug 'iamcco/markdown-preview.nvim', { 'for': ['md', 'markdown', 'vim-plug'], 'do': { -> mkdp#util#install() } }
 
 call plug#end()
 filetype plugin indent on
