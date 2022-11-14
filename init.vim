@@ -30,11 +30,19 @@ filetype off
 
 call plug#begin()
 
+" NERDTree
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+" Go
 Plug 'fatih/vim-go', { 'for': 'go' }
+" Language Server
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+" Git Blame
 Plug 'apzelos/blamer.nvim'
+" Markdown
 " Plug 'iamcco/markdown-preview.nvim', { 'for': ['md', 'markdown', 'vim-plug'], 'do': { -> mkdp#util#install() } }
+" Bazel
+Plug 'google/vim-maktaba'
+Plug 'bazelbuild/vim-bazel'
 
 call plug#end()
 filetype plugin indent on
