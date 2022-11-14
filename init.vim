@@ -32,7 +32,7 @@ call plug#begin()
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'fatih/vim-go', { 'for': 'go' }
-Plug 'neoclide/coc.nvim', { 'branch': 'release', 'do': 'yarn install --frozen-lockfile' }
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
 call plug#end()
 filetype plugin indent on
@@ -58,3 +58,9 @@ if has('nvim')
 else
   inoremap <silent><expr> <c-@> coc#refresh()
 endif
+
+" Opend NERDTree automatically
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" Close if only NERDTree exists
+" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
