@@ -33,11 +33,18 @@ call plug#begin()
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+Plug 'apzelos/blamer.nvim'
 
 call plug#end()
 filetype plugin indent on
 
+" disable vim-go to use coc.nvim
 let g:go_def_mapping_enabled = 0
+
+" blamer
+let g:blamer_show_in_visual_modes = 0
+let g:blamer_show_in_insert_modes = 0
+let g:blamer_date_format = '%Y-%m-%d'
 
 " for coc.nvim
 
