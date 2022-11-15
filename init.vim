@@ -23,6 +23,9 @@ set incsearch
 set ignorecase
 set smartcase
 
+" terminal mode
+:tnoremap <Esc> <C-\><C-n>
+
 
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
 
@@ -43,6 +46,8 @@ Plug 'apzelos/blamer.nvim'
 " Bazel
 Plug 'google/vim-maktaba'
 Plug 'bazelbuild/vim-bazel'
+" Terminal
+" Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 
 call plug#end()
 filetype plugin indent on
