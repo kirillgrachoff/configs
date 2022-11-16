@@ -25,6 +25,8 @@ set smartcase
 
 " terminal mode
 :tnoremap <Esc> <C-\><C-n>
+" tabs
+:nnoremap <C-t> :term<CR>:set nonumber<CR>:set norelativenumber<CR>i
 
 
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
