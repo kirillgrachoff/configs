@@ -13,7 +13,7 @@ set clipboard+=unnamedplus
 syntax on
 
 set number
-set relativenumber
+" set relativenumber
 set scrolloff=2
 set nowrap
 
