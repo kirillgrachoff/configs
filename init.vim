@@ -52,6 +52,9 @@ Plug 'bazelbuild/vim-bazel'
 " Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 " FZF
 Plug 'junegunn/fzf'
+" Telescope (FZF with steroids)
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
 
 call plug#end()
 filetype plugin indent on
