@@ -41,20 +41,19 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'fatih/vim-go', { 'for': 'go' }
 " Language Server
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
-" Git Blame
-Plug 'apzelos/blamer.nvim'
 " Markdown
 " Plug 'iamcco/markdown-preview.nvim', { 'for': ['md', 'markdown', 'vim-plug'], 'do': { -> mkdp#util#install() } }
 " Bazel
 Plug 'google/vim-maktaba'
 Plug 'bazelbuild/vim-bazel'
-" Terminal
-" Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 " FZF
-Plug 'junegunn/fzf'
-" Telescope (FZF with steroids)
+Plug 'junegunn/fzf' " fzf needed
+Plug 'junegunn/fzf.vim'
+" Git (required by fzf.vim#Commits)
+Plug 'tpope/vim-fugitive'
+" Telescope (FZF drop-n-replacement)
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
+Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' } " ripgrep needed
 
 call plug#end()
 filetype plugin indent on
@@ -62,19 +61,12 @@ filetype plugin indent on
 " disable vim-go to use coc.nvim
 let g:go_def_mapping_enabled = 0
 
-" blamer
-let g:blamer_show_in_visual_modes = 0
-let g:blamer_show_in_insert_modes = 0
-let g:blamer_date_format = '%Y-%m-%d'
-
 " for coc.nvim
-
 inoremap <silent><expr> <TAB>
       \ coc#pum#visible() ? coc#pum#next(1) :
       \ CheckBackspace() ? "\<Tab>" :
       \ coc#refresh()
 inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
-
 " Make <CR> to accept selected completion item or notify coc.nvim to format
 " <C-g>u breaks current undo, please make your own choice.
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
