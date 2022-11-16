@@ -50,6 +50,8 @@ Plug 'google/vim-maktaba'
 Plug 'bazelbuild/vim-bazel'
 " Terminal
 " Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
+" FZF
+Plug 'junegunn/fzf'
 
 call plug#end()
 filetype plugin indent on
