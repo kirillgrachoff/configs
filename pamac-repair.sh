@@ -1,0 +1,1 @@
+pamac update --force-refresh
