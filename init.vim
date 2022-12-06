@@ -59,7 +59,7 @@ call plug#end()
 filetype plugin indent on
 
 " disable vim-go to use coc.nvim
-let g:go_def_mapping_enabled = 0
+" let g:go_def_mapping_enabled = 0
 
 " for coc.nvim
 inoremap <silent><expr> <TAB>

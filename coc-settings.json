@@ -1,13 +1,5 @@
 {
   "languageserver": {
-    "golang": {
-      "command": "gopls",
-      "rootPatterns": ["go.work", "go.mod", ".vim/", ".git/", ".hg/"],
-      "filetypes": ["go"],
-      "initializationOptions": {
-        "usePlaceholders": true
-      }
-    },
     "ccls": {
       "command": "ccls",
       "filetypes": ["c", "cc", "cpp", "c++", "cxx", "h", "hpp", "h++", "hxx", "objc", "objcpp"],
