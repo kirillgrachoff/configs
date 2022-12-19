@@ -41,6 +41,7 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'fatih/vim-go', { 'for': 'go' }
 " Language Server
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+" CocInstall coc-rust-analyzer
 " Markdown
 " Plug 'iamcco/markdown-preview.nvim', { 'for': ['md', 'markdown', 'vim-plug'], 'do': { -> mkdp#util#install() } }
 " Bazel
