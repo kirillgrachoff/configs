@@ -1,7 +1,7 @@
 set nocompatible
 set encoding=utf-8
 
-" set updatetime=300
+set updatetime=300
 
 set tabstop=4
 set smartindent
@@ -60,7 +60,7 @@ call plug#end()
 filetype plugin indent on
 
 " disable vim-go to use coc.nvim
-" let g:go_def_mapping_enabled = 0
+let g:go_def_mapping_enabled = 0
 
 " for coc.nvim
 inoremap <silent><expr> <TAB>
@@ -79,6 +79,20 @@ if has('nvim')
 else
   inoremap <silent><expr> <c-@> coc#refresh()
 endif
+
+" Use `[g` and `]g` to navigate diagnostics
+" Use `:CocDiagnostics` to get all diagnostics of current buffer in location list
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
+
+" GoTo code navigation
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+" Symbol renaming
+nmap <leader>rn <Plug>(coc-rename)
 
 " Opend NERDTree automatically
 " autocmd StdinReadPre * let s:std_in=1
