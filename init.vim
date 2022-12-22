@@ -94,6 +94,9 @@ nmap <silent> gr <Plug>(coc-references)
 " Symbol renaming
 nmap <leader>rn <Plug>(coc-rename)
 
+" gh - get hint on whatever's under the cursor
+nnoremap <silent> gh :call <SID>show_documentation()<CR>
+
 " Opend NERDTree automatically
 " autocmd StdinReadPre * let s:std_in=1
 " autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
