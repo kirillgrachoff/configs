@@ -9,9 +9,7 @@
           "directory": "/tmp/ccls"
         }
       }
-    }
-  },
-  "languageserver": {
+    },
     "golang": {
       "command": "gopls",
       "rootPatterns": ["go.work", "go.mod", ".vim/", ".git/", ".hg/"],
