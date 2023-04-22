@@ -57,6 +57,10 @@ Plug 'tpope/vim-fugitive'
 " Telescope (FZF drop-n-replacement)
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' } " ripgrep needed
+" Elixir
+Plug 'elixir-editors/vim-elixir'
+" Scala
+" Plug 'scalameta/nvim-metals'
 
 call plug#end()
 filetype plugin indent on
