@@ -28,6 +28,7 @@ set smartcase
 " tabs
 :nnoremap <C-t> :term<CR>:set nonumber<CR>:set norelativenumber<CR>i
 
+:colorscheme retrobox
 
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
 
@@ -38,7 +39,7 @@ call plug#begin()
 " NERDTree
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 " Go
-Plug 'fatih/vim-go', { 'for': 'go' }
+" Plug 'fatih/vim-go', { 'for': 'go' }
 " Language Server
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 " CocInstall coc-rust-analyzer
@@ -47,8 +48,8 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 " Markdown
 " Plug 'iamcco/markdown-preview.nvim', { 'for': ['md', 'markdown', 'vim-plug'], 'do': { -> mkdp#util#install() } }
 " Bazel
-Plug 'google/vim-maktaba'
-Plug 'bazelbuild/vim-bazel'
+" Plug 'google/vim-maktaba'
+" Plug 'bazelbuild/vim-bazel'
 " FZF
 Plug 'junegunn/fzf' " fzf needed
 Plug 'junegunn/fzf.vim'
@@ -58,7 +59,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' } " ripgrep needed
 " Elixir
-Plug 'elixir-editors/vim-elixir'
+" Plug 'elixir-editors/vim-elixir'
 " Scala
 " Plug 'scalameta/nvim-metals'
 
