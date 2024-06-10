@@ -1,2 +1,5 @@
 {
+    "zig.enabled": true,
+    "zig.path": "zls",
+    "zig.debugLog": false
 }
